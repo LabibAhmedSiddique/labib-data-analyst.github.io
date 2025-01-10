@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Comic Neue", cursive;
+  color: #812440;
+  font-size: 1.25rem;
+  margin: 0 6.25rem;
+  line-height: 1.6;
+  background-color: #fff5ed;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #521024;
+}
+.navigation ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  list-style-type: none;
+  padding: 1.25rem;
+}
+.navigation li {
+  font-size: 1.25rem;
+  margin: 0 0 0 0.625rem;
+  padding: 0 0 0 0.9375rem;
+}
+.navigation a {
+  color: #521024;
+  font-weight: bold;
+  text-decoration: none;
+  transition: font-size 0.3s ease, transform 0.3s ease;
+}
+.navigation :hover {
+  color: #ca5f7f;
+  font-size: 1.5625rem;
+}
+.intro {
+  padding: 13.75rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.intro h1 {
+  font-size: 3.4375rem;
+}
+#socials ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: left;
+  gap: 0.625rem;
+  padding: 0;
+}
+#socials img {
+  height: 2.1875rem;
+  width: 2.1875rem;
+  transition: height, width 0.3s ease, transform 0.3s ease;
+}
+#socials img:hover {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  padding: 3.125rem;
+}
+#skills {
+  padding: 3.125rem 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.25rem;
+}
+#projects {
+  padding: 3.125rem 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.25rem;
+}
+#experience {
+  padding: 3.125rem 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+}
+.company-experience {
+  display: flex;
+  margin: 0;
+  border-radius: 0.3125rem;
+  box-shadow: 0.3125rem 0.25rem 1.25rem rgba(71, 9, 9, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.description {
+  padding: 2.5rem 6.25rem 2.5rem 5.625rem;
+  border-radius: 0.3125rem;
+  box-shadow: 0.3125rem 0.25rem 1.25rem rgba(71, 9, 9, 0.2);
+}
+.company-title {
+  display: flex;
+  flex-direction: column;
+  padding: 3.125rem;
+}
+.skill-type {
+  padding: 3.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0.3125rem;
+  box-shadow: 0.3125rem 0.25rem 1.25rem rgba(71, 9, 9, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.skill-type img {
+  height: 5rem;
+  width: 5rem;
+}
+.skill-type:hover, .project-card:hover, .company-experience:hover, #education:hover, #publication:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.25rem 1.125rem #ffcad4;
+}
+#education, #publication {
+  padding: 3.125rem;
+  border-radius: 0.9375rem;
+  box-shadow: 0.3125rem 0.25rem 1.25rem rgba(71, 9, 9, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.project-card {
+  padding: 3.75rem;
+  border-radius: 0.3125rem;
+  box-shadow: 0.3125rem 0.25rem 1.25rem rgba(71, 9, 9, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.project-card h3 {
+  padding: 1.25rem;
+}
+form {
+  max-width: 31.25rem;
+  margin: 0 auto;
+  padding: 1.25rem;
+  border: 0.0625rem solid #ddd;
+  border-radius: 0.5rem;
+  background-color: #fff5ed;
+  box-shadow: 0.3125rem 0.25rem 1.25rem rgba(71, 9, 9, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+form input[type="email"], form textarea {
+  padding: 0.625rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin-top: 0.3125rem;
+  width: 100%;
+  background-color: #fff5ed;
+}
+form:hover {
+  transform: scale(1.05);
+}
+form textarea {
+  resize: vertical;
+  min-height: 6.25rem;
+}
+form button[type="submit"] {
+  padding: 0.75rem;
+  background-color: #812440;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  align-self: center;
+}
+form button[type="submit"]:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+@media (max-width:750px){
+  body {
+      font-family: "Comic Neue", cursive;
+      color: #812440;
+      font-size: 1.2rem;
+      margin: 0 1.5rem;
+      line-height: 1.6;
+      background-color: #fff5ed;
+  }
+  .navigation ul {
+      display: flex;
+      flex-direction: column;
+      
+      list-style-type: none;
+      padding: 0rem;
+  }
+  .navigation li {
+      font-size: 1.25rem;
+      margin: 0 0 0 0rem;
+      padding: 0 0 0 0rem;}
+  #skills,#projects,#experience {
+      padding: 3.125rem 0 0 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3.25rem;
+  }
+  .company-experience {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+
+  }
+  .description {
+      padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+  }
+
+
+}
